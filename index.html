@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--- Basic Page Needs
+  ================================================== -->
+  <meta charset="UTF-8">
+  <title>Sign joke</title>
+  <meta name="description" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/libs/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonts
+  ================================================== -->
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat");
+  </style>
+
+  <!-- Polyfill To Fetches External SVGs
+  ================================================== -->
+  <script src="js/libs/svgxuse.min.js" defer></script>
+
+</head>
+
+<body>
+
+  <!-- Container
+  ================================================== -->
+  <div class="container">
+    <h1 class="visually-hidden">Login form with a joke</h1>
+
+    <!-- Header
+    ================================================== -->
+    <header class="header">
+      <a class="header__logo" href="http://denis.pw" target="_blank">
+        <img src="img/espinoza.svg" alt="Denis Espinoza logotype">
+      </a>
+    </header> <!-- Header End -->
+
+    <!-- Main Content
+    ================================================== -->
+    <main>
+      <form class="form" action="post">
+        <p>
+          <label for="username">Username</label>
+          <input type="text" id="username" value="denisespinoza">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <span class="password-wrap">
+            <input type="text" id="password" value="1234567qwerty">
+
+            <!-- Eye Button -->
+            <button class="eye-button" type="button">
+              <svg class="eye eye-grey" width="42" height="27">
+                <use xlink:href="img/sprite-eye.svg#eye" width="42" height="27"></use>
+              </svg>
+              <svg class="eye eye-grey eyelashes" visibility="hidden" width="42" height="27">
+                <use xlink:href="img/sprite-eye.svg#eyelashes" width="42" height="27"></use>
+              </svg>
+              <svg class="eye eye-closed" width="42" height="19" display="none">
+                <use xlink:href="img/sprite-eye.svg#eye-closed"></use>
+              </svg>
+              <svg class="eye eye-red" width="42" height="29" display="none">
+                <use xlink:href="img/sprite-eye.svg#eye-red"></use>
+              </svg>
+              <span class="tear"></span>
+            </button>
+
+          </span>
+        </p>
+        <button class="login-btn dis" type="submit">Login</button>
+        <a href="" class="link">Reset</a>
+      </form>
+    </main> <!-- Main Content End -->
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <a class="footer__logo" href="http://shockolada.site/" target="_blank">
+        <img src="img/shockolada.svg" alt="Shockolada logotype">
+      </a>
+    </footer> <!-- Footer End -->
+
+  </div> <!-- Container End -->
+
+  <!-- Script
+  ================================================== -->
+  <script src="js/eye.js"></script>
+
+</body>
+
+</html>
